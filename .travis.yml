@@ -12,6 +12,8 @@ install: pip install -U tox-travis
 # Command to run tests, e.g. python setup.py test
 script: tox
 
+dist: xenial
+
 # Assuming you have installed the travis-ci CLI tool, after you
 # create the Github repo and add it to Travis, run the
 # following command to finish PyPI deployment setup:
@@ -25,4 +27,4 @@ deploy:
   on:
     tags: true
     repo: brechmos/t2stimulate
-    python: 3.6
+    python: 3.7
