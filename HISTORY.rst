@@ -6,3 +6,4 @@ History
 ------------------
 
 * First release on PyPI.
+* Basic stimulated echo simulation written with tests.
