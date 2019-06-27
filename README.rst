@@ -27,6 +27,11 @@ MRI T2 decay curve simulation with imperfect excitation pulse (B1)
 * Documentation: https://t2stimulate.readthedocs.io.
 
 
+.. image:: https://github.com/brechmos/t2stimulate/blob/master/images/ex1.png?raw=true
+     :alt: Example image
+
+
+
 Features
 --------
 
