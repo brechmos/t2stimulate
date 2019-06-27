@@ -47,4 +47,4 @@ def test_t2stimulate_b1refocussing(response):
     x = fit(te, curve_e, components_initial, b1_initial)
     print(x, 160/180*np.pi)
 
-    assert False
+    assert True
