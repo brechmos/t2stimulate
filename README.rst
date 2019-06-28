@@ -20,7 +20,7 @@ T2Stimulate
 
 
 
-MRI T2 decay curve simulation with imperfect excitation pulse (B1)
+MRI T2 decay curve simulation with imperfect refocusing pulses (non-180 degrees)
 
 
 * Free software: GNU General Public License v3
