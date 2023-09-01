@@ -3,6 +3,7 @@ on: [push]
 jobs:
   paper:
     runs-on: ubuntu-latest
+    branch: joss-paper
     name: Paper Draft
     steps:
       - name: Checkout
