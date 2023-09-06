@@ -76,7 +76,7 @@ plt.ylim((0.03, 0.1))
 plt.show()
 ```
 
-![An example set of T2 decay curves based on refocusing pulses of $180^\deg$ (blue), $160^\deg$ (green), and $140^\deg$ (red).\label{fig:ex1}](ex1.png)
+![An example set of T2 decay curves based on refocusing pulses of $180^\circ$ (blue), $160^\circ$ (green), and $140^\circ$ (red).\label{fig:ex1}](ex1.png)
 
 
 # References
