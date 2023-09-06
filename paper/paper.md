@@ -21,7 +21,7 @@ bibliography: paper.bib
 
 # Summary
 
-Magnetic resonance imaging (MRI) is a common imaging technique to evaluate, assess, and diagnose diseases throughout the body. One of the most common MRI sequences is a T2 sequence which is sensitive to changes in the brain due to disease processes, for example multiple sclerosis (MS).  In MS, the disease breaks down the myelin surrounding the neurons [@Dobson2019-eh] resulting in disability for the patient. Myelin water imaging [@MacKay1994-aj] is one technique to quantify the myelin water in the brain to assess the degree of disease and is based on a multi-echo T2 decay curve. This T2 decay curve is fit and the short T2 component has been shown to be related to myelin.
+Magnetic resonance imaging (MRI) is a common imaging technique to evaluate, assess, and diagnose diseases throughout the body. One of the most common MRI sequences is a T2 sequence which is sensitive to changes in the brain due to disease processes, for example multiple sclerosis (MS).  In MS, the disease breaks down the myelin surrounding the neurons resulting in disability for the patient. Myelin water imaging  is one technique to quantify the myelin water in the brain to assess the degree of disease and is based on a multi-echo T2 decay curve. This T2 decay curve is fit and the short T2 component has been shown to be related to myelin.
 
 # Statement of need
 
