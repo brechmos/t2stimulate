@@ -25,7 +25,7 @@ Magnetic resonance imaging (MRI) is a common imaging technique to evaluate, asse
 
 # Statement of need
 
-MRI sequences such as the multi-echo T2 are affected by minor scanner mis-calibration and hardware inhomogeneities. In particular, a multi-echo T2 acquisition will initially have a decreased signal due to hardware inhomogenities but then accumulate errant signal known as stimulated echoes [@Hennig1988-qh].  This combination of decreased signal and increased stimulated echoes gives a T2 decay curve that can not be fit by traditional means. [@Prasloski2012-vi] 
+MRI sequences such as the multi-echo T2 are affected by minor scanner mis-calibration and hardware inhomogeneities. In particular, a multi-echo T2 acquisition will initially have a decreased signal due to hardware inhomogenities but then accumulate errant signal known as stimulated echoes.  This combination of decreased signal and increased stimulated echoes gives a T2 decay curve that can not be fit by traditional means. 
 
 The `T2Stimulate` Python package models the decreased signal and stimulated echoes based on known parameters to create a T2 decay curve that incorporates all the information. As well, there is a Python function to fit a decay curve that is affected by such signal variation in order to determine the T2 components and the inhomogeneity in the B1 field. This software will be useful for any MRI researcher doing work with T2 decay curve fitting.
 
