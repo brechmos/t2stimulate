@@ -21,16 +21,17 @@ bibliography: paper.bib
 
 # Summary
 
-Magnetic resonance imaging (MRI) is a common imaging technique to evaluate, assess, and diagnose diseases throughout the body. One of the most common MRI sequences is a T2 sequence which is sensitive to changes in the brain due to disease processes, for example multiple sclerosis (MS).  In MS, the disease breaks down the myelin surrounding the neurons resulting in disability for the patient. Myelin water imaging is one technique to quantify the myelin water in the brain to assess the degree of disease and is based on a multi-echo T2 decay curve. This T2 decay curve is fit and the short T2 component has been shown to be related to myelin.
+Magnetic resonance imaging (MRI) is a common imaging technique to evaluate, assess, and diagnose diseases throughout the body. One of the most common MRI sequences is a T2 sequence which is sensitive to changes in the brain due to disease processes, for example multiple sclerosis (MS).  In MS, the disease breaks down the myelin surrounding the neurons [@Dobson2019-eh] resulting in disability for the patient. Myelin water imaging [@MacKay1994-aj] is one technique to quantify the myelin water in the brain to assess the degree of disease and is based on a multi-echo T2 decay curve. This T2 decay curve is fit and the short T2 component has been shown to be related to myelin.
 
 # Statement of need
 
-MRI sequences such as the multi-echo T2 are affected by minor scanner mis-calibration and hardware inhomogeneities. In particular, a multi-echo T2 acquisition will initially have a decreased signal due to hardware inhomogenities but then accumulate errant signal known as stimulated echoes.  This combination of decreased signal and increased stimulated echoes gives a T2 decay curve that can not be fit by traditional means.  
+MRI sequences such as the multi-echo T2 are affected by minor scanner mis-calibration and hardware inhomogeneities. In particular, a multi-echo T2 acquisition will initially have a decreased signal due to hardware inhomogenities but then accumulate errant signal known as stimulated echoes [@Hennig1988-qh].  This combination of decreased signal and increased stimulated echoes gives a T2 decay curve that can not be fit by traditional means. [@Prasloski2012-vi] 
 
 The `T2Stimulate` Python package models the decreased signal and stimulated echoes based on known parameters to create a T2 decay curve that incorporates all the information. As well, there is a Python function to fit a decay curve that is affected by such signal variation in order to determine the T2 components and the inhomogeneity in the B1 field. This software will be useful for any MRI researcher doing work with T2 decay curve fitting.
 
 # Example
 
+The example below is of a 32 echo decay curve "acquired" based on three different refocussing pulse flip angles.
 
 ```
 import matplotlib.pyplot as plt
@@ -75,29 +76,8 @@ plt.ylim((0.03, 0.1))
 plt.show()
 ```
 
-![Caption for example figure.\label{fig:ex1}](ex1.png)
-and referenced from text using \autoref{fig:example}.
+![An example set of T2 decay curves based on refocusing pulses of 180^\deg (blue), 160^\deg (green), and 140^\deg (red).\label{fig:ex1}](ex1.png)
 
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-
-# Acknowledgements
-
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
 
 # References
 
